@@ -1,0 +1,159 @@
+table, th, td {
+    border: 1px solid black;
+       }
+tr:nth-child(even) {
+   background-color: lightblue;
+}
+tr:nth-child(odd) {
+   background-color: lightpink;
+}
+nav {
+   background-color: darkblue;
+}
+h3 {
+   color: black;
+}
+iframe {
+    border: 0;
+  }
+#topNav li {
+    display: inline-block;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#format {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#k1 {
+    display: none;
+}
+#k1:hover {
+    display: block;
+}
+
+#k2 {
+    display: none;
+}
+#k2:hover {
+    display: block;
+}
+#s {
+    display: none;
+}
+#s:hover {
+    display: block;
+}
+#w {
+    display: none;
+}
+#w:hover {
+    display: block;
+}
+
+#k3 {
+    display: none;
+}
+#k3:hover {
+    display: block;
+}
+#topNav a {
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: White; }
+#topNav {
+    height: 35px;
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+}
+
+#position {
+    display:grid;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    }
+    #container1 {
+    width: 535px;
+    background: #ffffff;
+    padding: 20px;
+    margin: 90px auto;
+    border-radius: 5px;
+    border: 2px solid gray;
+    float:right;
+    height:auto;
+    }
+    #container2 {
+        width: 535px;
+        background: #ffffff;
+        padding: 20px;
+        margin: 90px auto;
+        border-radius: 5px;
+        border: 2px solid gray;
+        float:right;
+        height:50%;
+        }
+    #header {
+    text-align: center;
+    background-color: #FEFFED;
+    border-radius: 5px;
+    margin: -39px -20px 10px -20px;
+    }
+    h2{
+    padding-top: 10px;
+    }
+    #content {
+    margin-left: 57px;
+    margin-top: 40px;
+    }
+    #register label{
+    margin-right:5px;
+    }
+    #password input {
+    padding: 5px 14px;
+    border: 1px solid #d5d9da;
+    box-shadow: 0 0 9px #0E34F5 inset;
+    width: 272px;
+    font-size: 1em;
+    height: 25px;
+    }
+    #submit {
+        width: 50px;
+    }
+    #register .short{
+    font-weight:bold;
+    color:#FF0000;
+    font-size:larger;
+    }
+    #register .weak{
+    font-weight:bold;
+    color:orange;
+    font-size:larger;
+    }
+    #register .good{
+    font-weight:bold;
+    color:#2D98F3;
+    font-size:larger;
+    }
+    #register .strong{
+    font-weight:bold;
+    color: limegreen;
+    font-size:larger;
+    }
+
+    #position {
+        flex-direction: row-reverse;
+    }
+    
+

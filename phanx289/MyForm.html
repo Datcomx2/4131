@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>My Form</title>
+</head>
+<body>
+    <nav id="topNav">
+        <ul id="topNav">
+            <li><a href = "file:///C:/Users/datdo/Downloads/phanx289/phanx289/myContacts.html">My Contacts</a></li>
+            <li><a href = "file:///C:/Users/datdo/Downloads/phanx289/phanx289/myWidgets.html">My Widgets</a></li>
+            <li><a href = "file:///C:/Users/datdo/Downloads/phanx289/phanx289/MyForm.html">Form Input</a></li>
+        </ul>
+    </nav>
+
+    <form class="Myform" method="post" id="myform" action="https://www-users.cselabs.umn.edu/~chal0006/echo.php">
+        <label for="fname">Name:</label><br>
+        <input type="text" id="name" name="name"pattern="[a-zA-Z0-9 ]+"title="Please match the requested form: Contact's name must be alphanumeric" required><br>
+        <label for="Category">Category:</label><br>
+        <select id="category" name="category"required>
+            <option value="Academic">Academic</option>
+            <option value="Industry">Industry</option>
+            <option value="Personal">Personal</option>
+          </select><br>
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location"required><br>
+        <label for="info">Contact Information:</label><br>
+        <input type="text" id="contact" name="contact"required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" title="Incorrect email name. Please end your email with .com"required><br>
+        <label for="site">Website:</label><br>
+        <input type="text" id="website" name="website" pattern="https://.*" title="Incorrect website name. Please start your website with 'https://'" required><br><br>
+        <button type="submit" class="btn">Submit</button>
+
+    </form>
+
+</body>
+
+
+</html>
