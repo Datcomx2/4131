@@ -2,7 +2,9 @@
 <html lang='en'>
     <head>
         <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src ="myContacts.js"></script>
+    <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8SKLNng_0yctCJaRMQLZ_H2BQBk2qW1w&callback=initMap"></script>
     <meta charset = "UTF-8">
     <title>Contacts</title>    
     </head>
@@ -31,7 +33,7 @@
                 </div>
                     <td>Carl Sturtivant</td>
                     <td>Academic</td>
-                    <td>6-197 Keller Hall</td>
+                    <td>Kenneth H. Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
                     <td>Teaching Professor<img id="k1" src='' alt=" "></td>
                     <td><a href="carl@umn.edu">carl@umn.edu</a></td>
                     <td><a href="https://cse.umn.edu/cs/carl-sturtivant">https://cse.umn.edu/cs/carl-sturtivant</a></td>
@@ -40,7 +42,7 @@
                 <tr id="row2" onmouseover="thumbnailToggle('Shepherd.jpg','row2');chgimg('Shepherd.jpg', 'Shepherd Labs');" onmouseout="hideImg('row2')">
                     <td>Christopher Kauffman</td>
                     <td>Academic</td>
-                    <td>327 Shepherd Labs</td>
+                    <td>Shepherd Laboratories, 100 Union St SE, Minneapolis, MN 55455</td>
                     <td>Associate Teaching Professor<img id="s" src='' alt=" "></td>
                     <td><a href="kauffman@umn.edu">kauffman@umn.edu</a></td>
                     <td><a href="https://cse.umn.edu/cs/christopher-kauffman">https://cse.umn.edu/cs/christopher-kauffman</a></td>
@@ -49,7 +51,7 @@
                 <tr id="row3" onmouseover="thumbnailToggle('walter.jpg','row3');chgimg('walter.jpg', 'Walter Library');" onmouseout="hideImg('row3')">
                     <td>George Karypis</td>
                     <td>Industry</td>
-                    <td>483 Walter Library</td>
+                    <td>117 Pleasant St SE, Minneapolis, MN 55455</td>
                     <td>Professor, Distinguished McKnight University Professor<img id="w" src='' alt=" "></td>
                     <td><a href="karypis@umn.edu">karypis@umn.edu</a></td>
                     <td><a href="https://cse.umn.edu/cs/george-karypisr">https://cse.umn.edu/cs/george-karypis</a></td>
@@ -58,7 +60,7 @@
                 <tr id="row4" onmouseover="thumbnailToggle('keller.jpg','row4');chgimg('keller.jpg', 'Keller Hall');" onmouseout="hideImg('row4')">
                     <td>Mattia Fazzini</td>
                     <td>Industry</td>
-                    <td>6-189 Keller Hall</td>
+                    <td>Kenneth H. Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
                     <td>Assistant Professor<img id="k2" src='' alt=" "></td>
                     <td><a href="mfazzini@umn.edu">mfazzini@umn.edu</a></td>
                     <td><a href="https://cse.umn.edu/cs/mattia-fazzini">https://cse.umn.edu/cs/mattia-fazzini</a></td>
@@ -67,7 +69,7 @@
                 <tr id="row5" onmouseover="thumbnailToggle('keller.jpg','row5');chgimg('keller.jpg', 'Keller Hall');" onmouseout="hideImg('row5')">
                     <td>Nicholas Hopper</td>
                     <td>Personal</td>
-                    <td>4-211 Keller Hall</td>
+                    <td>Kenneth H. Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
                     <td>Professor, Director of Undergraduate Studies<img id="k3" src='' alt=" "></td>
                     <td ><a href="hoppernj@umn.edu">hoppernj@umn.edu</a></td>
                     <td><a href="https://cse.umn.edu/cs/nick-hopper">https://cse.umn.edu/cs/nick-hopper</a></td>
@@ -75,5 +77,6 @@
                 </tr>
             </table>
         </div>
+        <div id="map"></div>
     </body>
 </html>

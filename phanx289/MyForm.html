@@ -4,6 +4,11 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>My Form</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="myForm.css" />
+    <script src="myForm.js"
+    ></script>
+    
 </head>
 <body>
     <nav id="topNav">
@@ -24,7 +29,15 @@
             <option value="Personal">Personal</option>
           </select><br>
         <label for="location">Location:</label><br>
-        <input type="text" id="location" name="location"required><br>
+        <input id="locationTextField" type="text" size="50" autocomplete="on"> 
+   <script> 
+      function init() { 
+          var input =      I     
+                   document.getElementById('locationTextField'); 
+          var autocomplete =  
+                   new google.maps.places.Autocomplete(input); 
+      } 
+   </script><br> 
         <label for="info">Contact Information:</label><br>
         <input type="text" id="contact" name="contact"required><br>
         <label for="email">Email:</label><br>
@@ -34,6 +47,9 @@
         <button type="submit" class="btn">Submit</button>
 
     </form>
+
+    <div id="map"></div>
+    <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8SKLNng_0yctCJaRMQLZ_H2BQBk2qW1w&callback=initMap"></script>
 
 </body>
 

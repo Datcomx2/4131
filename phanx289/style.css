@@ -153,13 +153,30 @@ body{
     #position {
         flex-direction: row-reverse;
     }
-    #widget {
-        position: relative;
+    #youtube{
+        position: fixed;
+        left: 100px;
+        top: 100px;
+
     }
-    .twitter-timeline {
-    bottom: 0;
-    right: 0;
+    #twitter{
+        position: fixed;
+        left: 100px;
+        top: 400px;
+
     }
+    html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#map {
+    height: 50%;
+  }
+
+    
+
+    
 
     
 
