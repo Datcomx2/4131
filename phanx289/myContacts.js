@@ -35,11 +35,38 @@ var marker = new google.maps.Marker({
     icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
 })
 
+
 function showTableDat(row) {
-    document.getElementById('row').innerHTML = "";
-    
-    for (i = 0; i < row.length; i++) {
-        var objCells = row.item(i);
-        row.innerHTML = info.innerHTML + " " + objCells;
-    }
+    var tablerow = document.getElementById(row);
+    return tablerow[2];
 }
+var address = [];
+address.push(showTableDat('row1'));
+address.push(showTableDat('row2'));
+address.push(showTableDat('row3'));
+address.push(showTableDat('row4'));
+address.push(showTableDat('row5'));
+
+var geocoder;
+var map;
+function init() {
+    geocoder = new google.maps.Geocoder();
+}
+
+function codeAddress() {
+    for(var i = 0; i < 4; i++){
+        var addresses = address[i];
+        geocoder.geocode( { 'address': addresses}, function(results, status) {
+            if (status == 'OK') {
+              map.setCenter(results[0].geometry.location);
+              var marker = new google.maps.Marker({
+                  map: map,
+                  position: results[0].geometry.location,
+                  icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
+              });
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+              }
+            });
+    }
+  }
